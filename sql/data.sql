@@ -43,6 +43,7 @@ insert into trips(id,reg_id,route_id,region_id) values (18,8,9,3);
 insert into trips(id,reg_id,route_id,region_id) values (19,8,9,3);
 insert into trips(id,reg_id,route_id,region_id) values (20,3,3,1);
 insert into trips(id,reg_id,route_id,region_id) values (21,3,2,1);
+insert into trips(id,reg_id,route_id,region_id) values (21,3,2,1);
 insert into trips(id,reg_id,route_id,region_id) values (22,6,4,2);
 insert into trips(id,reg_id,route_id,region_id) values (23,6,5,2);
 insert into trips(id,reg_id,route_id,region_id) values (24,6,5,2);
