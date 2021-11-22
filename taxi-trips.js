@@ -92,10 +92,12 @@ module.exports = function (pool) {
     }
 
     async function findTotalIncomePerTaxi(){
-        let x = await pool.query(`select trips.id,fare from trips 
-            join routes on routes.id = trips.route_id`);
+        let x = await pool.query(`select reg,sum(fare) from trips
+            join routes on routes.id = trips.route_id
+            join taxis on taxis.id = trips.reg_id
+            group by reg`);
 
-        return x.rows
+            return x.rows;
     }
 
     return {

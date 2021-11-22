@@ -70,11 +70,45 @@ describe('Taxi Trips', function () {
 
     });
     
-    //ya neh
     it('find the total income for each taxi', async function () {
 
         const taxiTrips = TaxiTrips(pool);
-        assert.deepStrictEqual([{}, {}, {}], await taxiTrips.findTotalIncomePerTaxi());
+        assert.deepStrictEqual([   {
+            "reg": "NJO 345 GP",
+             "sum": "53.00"
+           },
+           {
+             "reg": "CA 123 123",
+             "sum": "47.00"
+           },
+           {
+             "reg": "ND 980 231",
+             "sum": "46.00"
+           },
+           {
+             "reg": "CY 822 783",
+             "sum": "45.00"
+           },
+           {
+             "reg": "BHG 567 GP",
+             "sum": "70.00"
+           },
+           {
+             "reg": "NZ 045 952",
+             "sum": "56.00"
+           },
+           {
+             "reg": "ND 153 765",
+             "sum": "52.00"
+           },
+           {
+             "reg": "CJ 122 983",
+             "sum": "47.00"
+           },
+           {
+             "reg": "TNP 699 GP",
+             "sum": "57.00"
+           }], await taxiTrips.findTotalIncomePerTaxi());
 
     });
 
